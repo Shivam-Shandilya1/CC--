@@ -1,0 +1,31 @@
+{
+  "c-cpp-compile-run.run-in-external-terminal": true,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+  "C_Cpp.vcFormat.indent.caseLabels": true,
+  "gnuGlobal.autoUpdate": "Enabled",
+  "gnuGlobal.gtagsForceCpp": "Enabled",
+  "c-cpp-compile-run.run-args": "true",
+  "code-runner.runInTerminal": true,
+  "C_Cpp_Runner.cCompilerPath": "D:/CompSc/Code Blocks/CodeBlocks/MinGW/bin/gcc.exe",
+  "C_Cpp_Runner.cppCompilerPath": "D:/CompSc/Code Blocks/CodeBlocks/MinGW/bin/g++.exe",
+  "C_Cpp_Runner.debuggerPath": "D:/CompSc/Code Blocks/CodeBlocks/MinGW/bin/gdb.exe",
+  "C_Cpp_Runner.makePath": "D:/CompSc/Code Blocks/CodeBlocks/MinGW/bin/make.exe",
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.excludeSearch": [],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false
+}

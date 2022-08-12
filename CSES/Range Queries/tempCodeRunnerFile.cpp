@@ -1,0 +1,2 @@
+ seg[ind] = val;
+        return;
