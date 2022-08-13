@@ -16,7 +16,7 @@ int main() {
   for (int i = 1; i < n; i++) {
     int x;
     cin >> x;
-    if (x == 0) {
+    if (x == 0) { 
       for (int j = 1; j <= m; j++) {
 	for (int k : {j-1,j,j+1}) {
 	  if (k >= 1 && k <= m) {
