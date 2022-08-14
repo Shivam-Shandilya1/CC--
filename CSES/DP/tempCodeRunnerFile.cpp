@@ -1,1 +1,1 @@
-bool flag = true;
+vector<vector<long long>> dp(n+2,vector<long long>(2,0));
