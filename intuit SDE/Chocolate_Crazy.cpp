@@ -3,6 +3,7 @@ using namespace std;
 
 bool isprime(int n)
 {
+    if(n==1)return false;
     int i = 2;
     while(i<=sqrt(n))
     {
@@ -27,7 +28,7 @@ int dif_prime(int n)
 int cnt_prime(int n)
 {
     int count = 0;
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<n;i++)
     {
         if(isprime(i)==true)
         {
@@ -37,7 +38,7 @@ int cnt_prime(int n)
     return count;
 }
 
-int special_move(int n)
+long long special_move(int n)
 {
     if(isprime(n))
     {
@@ -46,13 +47,17 @@ int special_move(int n)
         int sum = pr_cnt+nxt_pr;
 
         int stp = 0;
-        bool f = 0;
-        while(f!=1)
+        
+        while(true)
         {
-            stp+=sum%10;
+            stp+=(sum%10);
             sum/=10;
-            if(stp<10)f=1;
-            if(sum==0)sum = stp;
+            if(stp<10 && sum==0)break;
+            if(sum==0)
+            {
+                sum = stp;
+                stp = 0;
+            }
         }
         return stp;
     }
@@ -62,13 +67,17 @@ int special_move(int n)
 
 long long solve(int N,int L,int M,vector<bool> &mine,int indx,int cnt)
 {
-    
-    if(indx>N)return INT_MAX;
+    cout<<"Indx:"<<indx<<endl;
+    if(indx>N || indx<=0)return INT_MAX;
     if(indx==N)return cnt;
     long long x = solve(N,L,M,mine,indx+1,cnt+1);
+    cout<<"X:"<<x<<endl;
     long long y = solve(N,L,M,mine,indx+2,cnt+1);
-    long long z = special_move(indx+1);
+    cout<<"Y:"<<y<<endl;
+    long long z = special_move(indx);
     long long s = solve(N,L,M,mine,indx+z,cnt+1);
+    cout<<"S:"<<s<<endl;
+    
     return min({x,y,s});
 }
 
@@ -87,7 +96,7 @@ int main()
         cin>>mines[i];
         mine[mines[i]]=1;
     }
-    
-    cout<<solve(N,L,M,mine,0,0)<<endl;
+    cout<<special_move(3)<<endl;
+    cout<<solve(N,L,M,mine,1,0)<<endl;
     return 0;
 }
