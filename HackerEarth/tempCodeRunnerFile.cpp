@@ -1,0 +1,1 @@
+cout<<src.first<<" "<<src.second<<" "<<dest.first<<" "<<dest.second<<endl;
