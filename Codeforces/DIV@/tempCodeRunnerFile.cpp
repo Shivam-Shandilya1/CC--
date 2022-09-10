@@ -1,0 +1,1 @@
+s.erase(s.begin()+s.size()-1);
