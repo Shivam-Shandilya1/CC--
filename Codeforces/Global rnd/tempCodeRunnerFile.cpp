@@ -1,0 +1,1 @@
+cout<<trn<<" "<<ans<<endl;
