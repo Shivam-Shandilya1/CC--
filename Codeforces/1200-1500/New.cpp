@@ -19,7 +19,7 @@ int solve(string s)
 int main()
 {
     string s = "  This   is a Test .  Okay!";
-    
+    cout<<__gcd(0,0)<<endl;
     cout<<solve(s);
     return 0;
 }
